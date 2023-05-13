@@ -98,4 +98,9 @@ Go the extra mile and write tests for your application. Then provide examples on
 }
 
 //* Export the function so I can Import in to my index.js
-module.exports = generateMarkdown;
+module.exports = {
+  renderLicenseBadge,
+  renderLicenseLink,
+  renderLicenseSection,
+  generateMarkdown,
+};
