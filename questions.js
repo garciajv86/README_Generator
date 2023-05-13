@@ -2,7 +2,7 @@
 const questions = [
   {
     type: "input",
-    name: "projectName",
+    name: "projectTitle",
     message: "What is the name of your project?",
     default: "README GENERATOR",
   },
@@ -29,12 +29,12 @@ const questions = [
     choices: ["MIT", "Apache 2.0", "GPL 3.0"],
   },
   {
-    type: "editor",
+    type: "input", //? Maybe use the editor type
     name: "contributingContent",
     message: "Enter the content for the contributing section:",
   },
   {
-    type: "editor",
+    type: "input", //? Maybe use the editor type
     name: "testContent",
     message: "Enter the content for the test section:",
   },
