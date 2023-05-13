@@ -19,34 +19,35 @@ const questions = [
   {
     type: "input",
     name: "usage",
-    message: "Please provide instructions on how to use the package or application:"
+    message:
+      "Please provide instructions on how to use the package or application:",
   },
   {
     type: "list",
     name: "license",
     message: "Which license would you like to use for your project?",
-    choices: ['MIT', 'Apache', 'GPL']
+    choices: ["MIT", "Apache 2.0", "GPL 3.0"],
   },
   {
     type: "editor",
     name: "contributingContent",
-    message: "Enter the content for the contributing section:"
+    message: "Enter the content for the contributing section:",
   },
   {
     type: "editor",
     name: "testContent",
-    message: "Enter the content for the test section:"
+    message: "Enter the content for the test section:",
   },
   {
     type: "input",
     name: "gitHubUserName",
-    message: "Enter your GitHub username:"
+    message: "Enter your GitHub username:",
   },
   {
     type: "input",
     name: "emailAddress",
-    message: "Enter your email address:"
-  }
+    message: "Enter your email address:",
+  },
 ];
 
 module.exports = {
