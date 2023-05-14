@@ -13,7 +13,7 @@ const {
 // TODO: Create a function to initialize app
 function init() {
   askQuestions();
-};
+}
 
 // Function call to initialize app
 init();
