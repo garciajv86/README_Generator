@@ -2,7 +2,7 @@
 //* const questions = require("./questions");
 //* const inquirer = require("inquirer");
 //* const fs = require("fs");
-const askQuestions = require("./ask-questions");
+const askQuestions = require("./utilities/ask-questions");
 const {
   renderLicenseBadge,
   renderLicenseLink,
@@ -15,5 +15,5 @@ function init() {
   askQuestions();
 }
 
-// Function call to initialize app
+//* Function call to initialize app
 init();

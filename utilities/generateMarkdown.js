@@ -26,52 +26,53 @@ function renderLicenseLink(license) {
 function renderLicenseSection(license) {
   const licenseLink = renderLicenseLink(license);
   const licenseBadge = renderLicenseBadge(license);
-  return `## License {#license}\n\n${licenseBadge}\n\nThis project is licensed under the [${license}](${licenseLink}) license.`;
+  return `## License\n\n${licenseBadge}\n\nThis project is licensed under the [${license}](${licenseLink}) license.`;
 }
 
 // TODO: Create a function to generate markdown for README
-function generateMarkdown(data) {
+function generateMarkdown(answers) {
   const template = `
-# ${data.projectTitle}
+# ${answers.projectTitle}
 
 ## Description
 
-${data.description}
+${answers.description}
 
 ## Table of Contents
 
-- [Installation](#installation)
-- [Usage](#usage)
-- [License](#license)
-- [Contributing](#contributing)
-- [Tests](#tests)
-- [Questions](#questions)
+- [Installation](##installation)
+- [Usage](##usage)
+- [License](##license)
+- [Contributing](##contributing)
+- [Tests](##tests)
+- [Questions](##questions)
 
-## Installation {#installation}
+## Installation
 
-${data.installation}
+${answers.installation}
 
-## Usage {#usage}
+## Usage
 
-${data.usage}
+${answers.usage}
 
+## License
 //! This is the license section it will be rendered by my function above
-${renderLicenseBadge(data.license)}
+${renderLicenseBadge(answers.license)}
       
-## Contributing {#contributing}
+## Contributing
 
-${data.contributingContent}
+${answers.contributingContent}
 
-## Tests {#tests}
+## Tests
 
-${data.testContent}
+${answers.testContent}
 
-## Questions {#questions}
+## Questions
 
 //* Github user name with a link to the users Github profile
-- [My GitHub Profile](https://github.com/${data.gitHubUserName})
+- [My GitHub Profile](https://github.com/${answers.gitHubUserName})
 //* Email address with instructions how to reach user with additional questions
-- ${data.emailAddress}
+- ${answers.emailAddress}
 
   `;
   return template;

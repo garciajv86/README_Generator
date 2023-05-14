@@ -2,8 +2,8 @@
 const fs = require("fs");
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {
-  fs.writeFile(fileName, data, (err) => {
+function writeToFile(fileName, answers) {
+  fs.writeFile(fileName, answers, (err) => {
     err ? console.error(err) : console.log(`File ${fileName} has been saved!`);
   });
 }
