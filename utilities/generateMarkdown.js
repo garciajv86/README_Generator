@@ -14,7 +14,6 @@ function renderLicenseBadge(license) {
 }
 
 // TODO: Create a function that returns the license link
-//* If there is no license, return an empty string
 function renderLicenseLink(license) {
   return license
     ? `https://choosealicense.com/licenses/${license.toLowerCase()}/`
@@ -22,7 +21,6 @@ function renderLicenseLink(license) {
 }
 
 // TODO: Create a function that returns the license section of README
-//* If there is no license, return an empty string
 function renderLicenseSection(license) {
   const licenseLink = renderLicenseLink(license);
   const licenseBadge = renderLicenseBadge(license);
@@ -40,12 +38,12 @@ ${answers.description}
 
 ## Table of Contents
 
-- [Installation](##installation)
-- [Usage](##usage)
-- [License](##license)
-- [Contributing](##contributing)
-- [Tests](##tests)
-- [Questions](##questions)
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
+- [Contributing](#contributing)
+- [Tests](#tests)
+- [Questions](#questions)
 
 ## Installation
 
@@ -56,7 +54,7 @@ ${answers.installation}
 ${answers.usage}
 
 ## License
-//! This is the license section it will be rendered by my function above
+
 ${renderLicenseBadge(answers.license)}
       
 ## Contributing
@@ -69,9 +67,7 @@ ${answers.testContent}
 
 ## Questions
 
-//* Github user name with a link to the users Github profile
 - [My GitHub Profile](https://github.com/${answers.gitHubUserName})
-//* Email address with instructions how to reach user with additional questions
 - ${answers.emailAddress}
 
   `;
