@@ -6,6 +6,7 @@ const inquirer = require("inquirer");
 function askQuestions() {
   inquirer.prompt(questions).then((answers) => {
     console.log("Answers:", answers);
+    
   });
 }
 

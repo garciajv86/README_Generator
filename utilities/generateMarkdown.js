@@ -1,12 +1,12 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
+//* If there is no license, return an empty string
 function renderLicenseBadge(license) {
   switch (license) {
     case "MIT":
       return "![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)";
-    case "Apache 2.0":
+    case "Apache-2.0":
       return "![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)";
-    case "GPL 3.0":
+    case "GPL-3.0":
       return "![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)";
     default:
       return "";
@@ -14,19 +14,29 @@ function renderLicenseBadge(license) {
 }
 
 // TODO: Create a function that returns the license link
-// If there is no license, return an empty string
-function renderLicenseLink(license) {}
+//* If there is no license, return an empty string
+function renderLicenseLink(license) {
+  return license
+    ? `https://choosealicense.com/licenses/${license.toLowerCase()}/`
+    : "";
+}
 
 // TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
-function renderLicenseSection(license) {}
+//* If there is no license, return an empty string
+function renderLicenseSection(license) {
+  const licenseLink = renderLicenseLink(license);
+  const licenseBadge = renderLicenseBadge(license);
+  return `## License {#license}\n\n${licenseBadge}\n\nThis project is licensed under the [${license}](${licenseLink}) license.`;
+}
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   const template = `
-  # ${data.projectTitle}
+# ${data.projectTitle}
 
 ## Description
+
+${data.description}
 
 ## Table of Contents
 
@@ -37,38 +47,34 @@ function generateMarkdown(data) {
 - [Tests](#tests)
 - [Questions](#questions)
 
-## Installation
+## Installation {#installation}
 
+${data.installation}
 
-## Usage
+## Usage {#usage}
 
-//* Provide instructions and examples for use. Include screenshots as needed.
+${data.usage}
 
-      //? ![alt text](assets/images/screenshot.png)
-
-## License
+//! This is the license section it will be rendered by my function above
+${renderLicenseBadge(data.license)}
       
-## Contributing
+## Contributing {#contributing}
 
-//* List your collaborators, if any, with links to their GitHub profiles.
-[My GitHub Profile](https://github.com/${data.gitHubUserName})
-${data.emailAddress}
-//* If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.
+${data.contributingContent}
 
-## Tests
+## Tests {#tests}
 
-//* Go the extra mile and write tests for your application. Then provide examples on how to run them here.
+${data.testContent}
 
-## Questions
+## Questions {#questions}
 
 //* Github user name with a link to the users Github profile
-
+- [My GitHub Profile](https://github.com/${data.gitHubUserName})
 //* Email address with instructions how to reach user with additional questions
+- ${data.emailAddress}
 
   `;
-  return `# ${data.projectTitle}
-
-`;
+  return template;
 }
 
 //* Export the function so I can Import in to my index.js

@@ -26,7 +26,7 @@ const questions = [
     type: "list",
     name: "license",
     message: "Which license would you like to use for your project?",
-    choices: ["MIT", "Apache 2.0", "GPL 3.0"],
+    choices: ["MIT", "Apache-2.0", "GPL-3.0"],
   },
   {
     type: "input", //? Maybe use the editor type
