@@ -30,7 +30,9 @@ function renderLicenseSection(license) {
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(answers) {
   const template = `
-# ${answers.projectTitle}
+# ${answers.projectTitle} 
+
+${renderLicenseBadge(answers.license)}
 
 ## Description
 
@@ -53,10 +55,8 @@ ${answers.installation}
 
 ${answers.usage}
 
-## License
-
-${renderLicenseBadge(answers.license)}
-      
+${renderLicenseSection(answers.license)}
+     
 ## Contributing
 
 ${answers.contributingContent}
