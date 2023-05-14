@@ -75,9 +75,4 @@ ${answers.testContent}
 }
 
 //* Export the function so I can Import in to my index.js
-module.exports = {
-  renderLicenseBadge,
-  renderLicenseLink,
-  renderLicenseSection,
-  generateMarkdown,
-};
+module.exports = generateMarkdown;
