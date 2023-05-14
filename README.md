@@ -2,16 +2,9 @@
 
 ## Description
 
-Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
+This project is a README.md generator app that provides a wizard that walks the user through a serious of questions that are common on a professional readme. This project is designed for professional developers to allow a quick way to create a professional readme file so the developer can spend more time on writing code instead of writing a readme. How this project is ran is in the terminal with the command 'node index.js' and enter, once the project is ran the user will be walked through a serious of questions which will be rendered onto the readme doc. My most challenging moment of this project was learning to get all the functions working together and bringing the files together to work between one another as well as writing some of the functions, but once I overcame these challenges everything started to click.
 
-- What was your motivation?
-- Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
-- What problem does it solve?
-- What did you learn?
-
-## Table of Contents (Optional)
-
-If your README is long, add a table of contents to make it easy for users to find what they need.
+## Table of Contents
 
 - [Installation](#installation)
 - [Usage](#usage)
@@ -20,25 +13,22 @@ If your README is long, add a table of contents to make it easy for users to fin
 
 ## Installation
 
-What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
+In order for this application to run you must have node.js and npm installed on your computer, if you install node.js npm is automatically installed. If provided a clickable link below if you need to install node, the version that the application is using is 16.20.0.<br><br>
+-[NodeJS](https://nodejs.org/en)
 
 ## Usage
 
 Provide instructions and examples for use. Include screenshots as needed.
+To use this app first navigate to the README_GENERATOR directory. Once inside the correct directory write the command "node index.js" and press enter, a wizard will pop up in your terminal with a serious of questions, an example screenshot is below of the code ran and the questioned asked, once you complete the wizard a message at the end will let you know the file has been saved as shown in the screenshot below.
 
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
+![questions app screenshot](assets/images/questionsScreenshot.png)
 
-    ```md
-    ![alt text](assets/images/screenshot.png)
-    ```
 
 ## Credits
 
-List your collaborators, if any, with links to their GitHub profiles.
+- Joshua V. Garcia
 
-If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.
-
-If you followed tutorials, include links to those here as well.
+- [My GitHub Profile](https://github.com/garciajv86)
 
 ## License
 
