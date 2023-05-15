@@ -19,7 +19,7 @@ This project is a README.md generator app that provides a wizard that walks the 
 
 ## Link
 
-This is where the link to my video demo from screencastify will go which is stored in my googleDrive.
+[Sample-Readme-Demo Link](https://drive.google.com/file/d/1dIo8MfQuaxq5aI26zmcX7yde0NtEnq6A/view)
 
 ## ScreenShot
 
