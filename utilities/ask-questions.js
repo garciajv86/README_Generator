@@ -8,7 +8,7 @@ const writeToFile = require("./writeToFile");
 function askQuestions() {
   inquirer.prompt(questions).then((answers) => {
     let markDown = generateMarkdown(answers);
-    writeToFile("SAMPLE-README.md", markDown);
+    writeToFile("./Output/SAMPLE-README.md", markDown);
   });
 }
 
