@@ -23,7 +23,7 @@ This is where the link to my video demo from screencastify will go which is stor
 
 ## ScreenShot
 
-This is where i will add a screenshot of a sample readme
+<br>![Sample Readme](./assets/images/SampleReadmeScreenshot.png)
 
 ## Installation
 
