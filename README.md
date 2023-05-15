@@ -1,6 +1,6 @@
 # Readme_Generator
 
-![badmath](https://img.shields.io/badge/License-MIT-blue)<br>
+![badmath](https://img.shields.io/badge/License-MIT-yellow)<br>
 
 ## Description
 
@@ -43,7 +43,7 @@ To use this app first navigate to the README_GENERATOR directory that holds the 
 
 ## License
 
-![badmath](https://img.shields.io/badge/License-MIT-blue)<br>
+![badmath](https://img.shields.io/badge/License-MIT-yellow)<br>
 This project is protected under the [MIT](https://choosealicense.com/mit) License.
 
 ## Badges
