@@ -29,13 +29,13 @@ const questions = [
     choices: ["MIT", "Apache-2.0", "GPL-3.0"],
   },
   {
-    type: "editor",
+    type: "input",
     name: "contributingContent",
     message:
-      "Enter the content for the contributing section then save and exit your text editor to save your input:",
+      "Enter the content for the contributing section, add <br> after contributors name or wherever you would like the content following to be placed on a new line:",
   },
   {
-    type: "input", //? Maybe use the editor type
+    type: "input",
     name: "testContent",
     message: "Enter the content for the test section:",
   },
