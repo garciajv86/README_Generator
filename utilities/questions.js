@@ -29,9 +29,10 @@ const questions = [
     choices: ["MIT", "Apache-2.0", "GPL-3.0"],
   },
   {
-    type: "input", //? Maybe use the editor type
+    type: "editor",
     name: "contributingContent",
-    message: "Enter the content for the contributing section:",
+    message:
+      "Enter the content for the contributing section then save and exit your text editor to save your input:",
   },
   {
     type: "input", //? Maybe use the editor type
